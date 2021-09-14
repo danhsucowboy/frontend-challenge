@@ -11,11 +11,14 @@ function debounce(func, delay) {
 }
 
 function saveInput(){
-    console.log('save input');
+    count++;
+    console.log(count);
 }
 
+let count = 0;
 const debounceFunc = debounce(() => saveInput(),3000);
 
 debounceFunc();
 debounceFunc();
 debounceFunc();
+
