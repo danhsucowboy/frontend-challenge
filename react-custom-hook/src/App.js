@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
+import userForm from './hook/userForm';
 
 function App() {
-  const { handleChange, handleSubmit, values, errors } = useForm({
+  const { handleChange, handleSubmit, values, errors } = userForm({
     initialValues: { account: '', password: '', rememberMe: false },
     validation: (values) => {
       const errors = {};
@@ -28,7 +28,7 @@ function App() {
         <input type="checkbox" name="rememberMe" onChange={handleChange} checked={values.rememberMe} />
         Remember Me
       </label>
-      <button onClick={handeSubmit}>Login</button>
+      <button onClick={handleSubmit}>Login</button>
     </>
   );
 }
