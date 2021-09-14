@@ -1,8 +1,8 @@
 import './App.css';
-import userForm from './hook/userForm';
+import useForm from './hook/useForm';
 
 function App() {
-  const { handleChange, handleSubmit, values, errors } = userForm({
+  const { handleChange, handleSubmit, values, errors } = useForm({
     initialValues: { account: '', password: '', rememberMe: false },
     validation: (values) => {
       const errors = {};

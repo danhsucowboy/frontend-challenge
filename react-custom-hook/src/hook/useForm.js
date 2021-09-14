@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-const UserForm = ({initialValues, validation, onSubmit}) => {
+const useForm = ({initialValues, validation, onSubmit}) => {
     const [values, setValues] = useState(initialValues);
     const [errors, setErrors] = useState({});
 
@@ -23,4 +23,4 @@ const UserForm = ({initialValues, validation, onSubmit}) => {
 
 };
 
-export default UserForm;
+export default useForm;
