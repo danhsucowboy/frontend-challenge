@@ -39,7 +39,7 @@ class Stack {
             return 0;
 
         let curr = this._first;
-        let counts = 1;
+        let counts = 0;
         while(curr != null){
             curr = curr.next;
             counts++;
